@@ -9,7 +9,7 @@ export default function DeepDiveLab() {
   const handleDelayedAdd = () => {
     setTimeout(() => {
       // ဒီနေရာကို Stale state မဖြစ်အောင် ပြင်ပါ
-      setCount(count + 1);
+      setCount((prevCount) => prevCount + 1);
     }, 3000);
   };
 
